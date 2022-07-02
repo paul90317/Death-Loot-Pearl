@@ -1,3 +1,10 @@
+scoreboard objectives remove dlp.death
 scoreboard objectives add dlp.death deathCount
 
-function dlp:loop
+scoreboard objectives remove dlp.use
+scoreboard objectives add dlp.use minecraft.used:lingering_potion
+
+scoreboard objectives add dlp.match dummy
+
+scoreboard objectives add dlp.cf.owner dummy
+execute unless score #world dlp.cf.owner = #world dlp.cf.owner run scoreboard players set #world dlp.cf.owner 0
