@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "selector": "@s"
+                            },
+                            "entity": "this"
+                        },
+                        {
+                            "function":"set_nbt",
+                            "tag":"{dlp:1}"
+                        }
+                    ],
+                    "name": "minecraft:lingering_potion"
+                }
+            ]
+        }
+    ]
+}

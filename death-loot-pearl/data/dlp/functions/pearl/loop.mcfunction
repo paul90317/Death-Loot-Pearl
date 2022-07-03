@@ -8,4 +8,4 @@ execute if score @s dlp.match matches 0 run data modify entity @s PickupDelay se
 execute if score @s dlp.match matches 1 run data modify entity @s PickupDelay set value 32767s
 
 data modify entity @s Age set value -32767s
-particle entity_effect ~ ~ ~ 0 64.0 0 0.3 20 force @a
+execute if score #world dlp.cf.ptc matches 1 run particle entity_effect ~ ~ ~ 0 64.0 0 0.3 20 force @a

@@ -1,0 +1,1 @@
+scoreboard players set #world dlp.cf.ptc 0

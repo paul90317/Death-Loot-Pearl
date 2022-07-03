@@ -8,3 +8,6 @@ scoreboard objectives add dlp.match dummy
 
 scoreboard objectives add dlp.cf.owner dummy
 execute unless score #world dlp.cf.owner = #world dlp.cf.owner run scoreboard players set #world dlp.cf.owner 0
+
+scoreboard objectives add dlp.cf.ptc dummy
+execute unless score #world dlp.cf.ptc = #world dlp.cf.ptc run scoreboard players set #world dlp.cf.ptc 1
